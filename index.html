@@ -705,24 +705,24 @@
   <div class="overlay-mockup">
     <div class="overlay-row">
       <span>🏁</span>
-      <span class="overlay-val">14 min</span>
+      <span class="overlay-val">15 min</span>
       <span class="overlay-label">timp</span>
     </div>
     <div class="overlay-row">
       <span>🛣️</span>
-      <span class="overlay-val">8.3 km</span>
+      <span class="overlay-val">3 km</span>
       <span class="overlay-label">distanță</span>
     </div>
     <div class="overlay-divider"></div>
-    <div class="overlay-ratio">5.42</div>
-    <div class="overlay-row" style="justify-content:center; gap:6px; margin-top:2px;">
-      <span style="font-size:12px;">⏱️</span>
-      <span style="font-size:11px; color:#8A95A8;">0.46 lei/min</span>
-      <span style="font-size:9px; color:#444; margin-left:auto;">lei/min</span>
+    <div class="overlay-row">
+      <span>💰</span>
+      <span class="overlay-ratio" style="flex:1; text-align:left; margin:0; font-size:13px !important;">5.00</span>
+      <span class="overlay-label">lei/km</span>
     </div>
-    <div class="overlay-divider"></div>
-    <div style="display:flex; justify-content:space-between; align-items:center; font-size:9px; color:#8A95A8; margin-top:2px;">
-      <span>💰</span><span style="color:#34D186; font-weight:700; font-size:11px;">lei/km</span>
+    <div class="overlay-row" style="margin-top:4px;">
+      <span>⏱️</span>
+      <span class="overlay-val" style="flex:1;">1.00</span>
+      <span class="overlay-label">lei/min</span>
     </div>
     <div class="overlay-hint">tap = închide</div>
   </div>
@@ -876,7 +876,7 @@
   // Animate overlay mockup ratio color cycling
   const ratio = document.querySelector('.overlay-ratio');
   const colors = ['#34D186', '#F0A500', '#E84040', '#34D186'];
-  const values = ['5.42', '3.87', '2.10', '7.23'];
+  const values = ['5.00', '3.50', '2.80', '6.20'];
   let idx = 0;
   setInterval(() => {
     idx = (idx + 1) % colors.length;
