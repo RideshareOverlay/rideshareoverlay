@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Descarcă RideshareOverlay</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: #0a0e17;
+    color: #e8edf5;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .container {
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+  }
+  .logo {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 28px;
+    color: #34D186;
+    margin-bottom: 8px;
+  }
+  .subtitle {
+    color: #8A95A8;
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+  .download-btn {
+    display: block;
+    background: #34D186;
+    color: #0a0e17;
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 18px 32px;
+    border-radius: 100px;
+    text-decoration: none;
+    margin-bottom: 40px;
+    transition: all 0.2s;
+  }
+  .download-btn:hover {
+    background: #2bc274;
+    transform: translateY(-2px);
+  }
+  .steps-card {
+    background: #111827;
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 16px;
+    padding: 24px;
+    text-align: left;
+  }
+  .steps-title {
+    font-size: 11px;
+    color: #8A95A8;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .step {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    margin-bottom: 16px;
+  }
+  .step:last-child { margin-bottom: 0; }
+  .step-num {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: rgba(52,209,134,0.15);
+    color: #34D186;
+    font-size: 13px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .step-text {
+    font-size: 14px;
+    color: #8A95A8;
+    line-height: 1.6;
+    padding-top: 4px;
+  }
+  .step-text strong { color: #e8edf5; }
+  .note {
+    margin-top: 24px;
+    font-size: 12px;
+    color: #444C5E;
+    line-height: 1.6;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="logo">⚡ RideshareOverlay</div>
+  <div class="subtitle">Apasă butonul de mai jos pentru a descărca aplicația</div>
+
+  <a href="https://rideshareoverlay.github.io/rideshareoverlay/RideshareOverlay.apk"
+     class="download-btn"
+     download="RideshareOverlay.apk">
+    ⬇ Descarcă RideshareOverlay
+  </a>
+
+  <div class="steps-card">
+    <div class="steps-title">Cum instalezi</div>
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-text">Apasă butonul verde de mai sus și așteaptă să se descarce fișierul <strong>RideshareOverlay.apk</strong></div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-text">Deschide <strong>aplicația Files</strong> pe telefonul tău → mergi la <strong>Descărcări</strong></div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-text">Apasă pe fișierul <strong>RideshareOverlay.apk</strong> → apasă <strong>Instalează</strong></div>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-text">Dacă apare mesajul <strong>"Instalare din surse necunoscute"</strong> → activează opțiunea și instalează</div>
+    </div>
+    <div class="step">
+      <div class="step-num">5</div>
+      <div class="step-text">Deschide aplicația și introdu <strong>cheia de licență</strong> primită pe email</div>
+    </div>
+    <div class="note">
+      Ai probleme? Contactează-ne la rideshareoverlay@gmail.com
+    </div>
+  </div>
+</div>
+</body>
+</html>
