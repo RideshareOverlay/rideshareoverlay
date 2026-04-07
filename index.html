@@ -657,35 +657,19 @@
     margin-bottom: 12px;
     overflow: hidden;
     background: #111827;
+    padding: 20px 24px;
   }
   .faq-question {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 24px;
-    cursor: pointer;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 600;
     color: #e8edf5;
-    transition: background 0.2s;
-  }
-  .faq-question:hover { background: #181C25; }
-  .faq-arrow {
-    color: #34D186;
-    font-size: 12px;
-    transition: transform 0.3s;
-    flex-shrink: 0;
-    margin-left: 16px;
+    margin-bottom: 10px;
   }
   .faq-answer {
-    display: none;
-    padding: 0 24px 20px;
     color: #8A95A8;
     font-size: 14px;
     line-height: 1.7;
   }
-  .faq-item.open .faq-answer { display: block; }
-  .faq-item.open .faq-arrow { transform: rotate(180deg); }
     nav { padding: 12px 16px; }
     .nav-logo { font-size: 15px; }
     .nav-download {
@@ -863,7 +847,7 @@
     <iframe
       width="100%"
       height="100%"
-      src="https://www.youtube.com/embed/VKTo6I3Y9fY"
+      src="https://www.youtube.com/embed/qPrOxngvK6Y"
       title="RideshareOverlay Tutorial"
       frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -893,69 +877,45 @@
 <section class="section" id="faq" style="padding-top:0; padding-bottom:80px;">
   <div class="section-label" style="text-align:center;">FAQ</div>
   <h2 class="section-title reveal" style="text-align:center;">Întrebări frecvente</h2>
-  <div style="max-width:700px; margin:0 auto;" id="faqList">
+  <div style="max-width:700px; margin:0 auto;">
 
     <div class="faq-item">
-      <div class="faq-question" onclick="toggleFaq(this)">
-        <span>Merge și pe iPhone?</span>
-        <span class="faq-arrow">▼</span>
-      </div>
+      <div class="faq-question">Merge și pe iPhone?</div>
       <div class="faq-answer">Din păcate nu, doar Android deocamdată. iOS nu permite overlay-uri peste alte aplicații.</div>
     </div>
 
     <div class="faq-item">
-      <div class="faq-question" onclick="toggleFaq(this)">
-        <span>Merge și cu Uber?</span>
-        <span class="faq-arrow">▼</span>
-      </div>
+      <div class="faq-question">Merge și cu Uber?</div>
       <div class="faq-answer">Momentan este optimizat pentru Bolt Driver. Uber vine în curând!</div>
     </div>
 
     <div class="faq-item">
-      <div class="faq-question" onclick="toggleFaq(this)">
-        <span>E sigur? Nu îmi blochează contul Bolt?</span>
-        <span class="faq-arrow">▼</span>
-      </div>
+      <div class="faq-question">E sigur? Nu îmi blochează contul Bolt?</div>
       <div class="faq-answer">Da, e complet sigur. Aplicația doar citește ce apare pe ecran, nu modifică nimic în Bolt. Bolt nu știe că rulează.</div>
     </div>
 
     <div class="faq-item">
-      <div class="faq-question" onclick="toggleFaq(this)">
-        <span>Cum funcționează plata?</span>
-        <span class="faq-arrow">▼</span>
-      </div>
+      <div class="faq-question">Cum funcționează plata?</div>
       <div class="faq-answer">Plătești 30 lei/lună cu cardul pe site. Primești pe email o cheie de licență cu care activezi aplicația. Poți anula oricând.</div>
     </div>
 
     <div class="faq-item">
-      <div class="faq-question" onclick="toggleFaq(this)">
-        <span>Pot să o încerc înainte să plătesc?</span>
-        <span class="faq-arrow">▼</span>
-      </div>
+      <div class="faq-question">Pot să o încerc înainte să plătesc?</div>
       <div class="faq-answer">Momentan nu există perioadă de probă gratuită, dar 30 lei înseamnă o singură cursă — dacă nu îți place, anulezi după prima lună.</div>
     </div>
 
     <div class="faq-item">
-      <div class="faq-question" onclick="toggleFaq(this)">
-        <span>Ce se întâmplă dacă îmi schimb telefonul?</span>
-        <span class="faq-arrow">▼</span>
-      </div>
-      <div class="faq-answer">Scrii la <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="413328252432292033242e3724332d203801262c20282d6f222e2c">[email&#160;protected]</a> și îți transferăm licența pe noul telefon în câteva ore.</div>
+      <div class="faq-question">Ce se întâmplă dacă îmi schimb telefonul?</div>
+      <div class="faq-answer">Scrii la rideshareoverlay@gmail.com și îți transferăm licența pe noul telefon în câteva ore.</div>
     </div>
 
     <div class="faq-item">
-      <div class="faq-question" onclick="toggleFaq(this)">
-        <span>Merge în toate orașele din România?</span>
-        <span class="faq-arrow">▼</span>
-      </div>
+      <div class="faq-question">Merge în toate orașele din România?</div>
       <div class="faq-answer">Da! Funcționează în toată România — București, Cluj, Timișoara, Iași, oriunde activezi Bolt.</div>
     </div>
 
     <div class="faq-item">
-      <div class="faq-question" onclick="toggleFaq(this)">
-        <span>Consumă mult bateria?</span>
-        <span class="faq-arrow">▼</span>
-      </div>
+      <div class="faq-question">Consumă mult bateria?</div>
       <div class="faq-answer">Foarte puțin — aplicația rulează în fundal și se activează doar când primești o cursă.</div>
     </div>
 
@@ -1000,12 +960,12 @@
   <div class="footer-logo">RideshareOverlay</div>
   <ul class="footer-links">
     <li><a href="privacy_policy.html">Politică de confidențialitate</a></li>
-    <li><a href="mailto:rideshareoverlay@gmail.com">Contact</a></li>
+    <li><a href="/cdn-cgi/l/email-protection#b3c1dad7d6c0dbd2c1d6dcc5d6c1dfd2caf3d4ded2dadf9dd0dcde">Contact</a></li>
   </ul>
   <div class="footer-copy">© 2026 RideshareOverlay</div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   function toggleFaq(el) {
     const item = el.closest('.faq-item');
     const isOpen = item.classList.contains('open');
@@ -1018,8 +978,4 @@
   // Scroll reveal
   const reveals = document.querySelectorAll('.reveal');
   const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry, i) => {
-      if (entry.isIntersecting) {
-        setTimeout(() => entry.target.classList.add('visible'), i * 80);
-        observer.unobserve(entry.target);
-   
+    entries.forEach((entry, i) 
