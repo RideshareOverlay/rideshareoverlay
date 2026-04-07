@@ -895,7 +895,7 @@
   <h2 class="section-title reveal" style="text-align:center;">Întrebări frecvente</h2>
   <div style="max-width:700px; margin:0 auto;" id="faqList">
 
-    <div class="faq-item reveal">
+    <div class="faq-item">
       <div class="faq-question" onclick="toggleFaq(this)">
         <span>Merge și pe iPhone?</span>
         <span class="faq-arrow">▼</span>
@@ -903,7 +903,7 @@
       <div class="faq-answer">Din păcate nu, doar Android deocamdată. iOS nu permite overlay-uri peste alte aplicații.</div>
     </div>
 
-    <div class="faq-item reveal">
+    <div class="faq-item">
       <div class="faq-question" onclick="toggleFaq(this)">
         <span>Merge și cu Uber?</span>
         <span class="faq-arrow">▼</span>
@@ -911,7 +911,7 @@
       <div class="faq-answer">Momentan este optimizat pentru Bolt Driver. Uber vine în curând!</div>
     </div>
 
-    <div class="faq-item reveal">
+    <div class="faq-item">
       <div class="faq-question" onclick="toggleFaq(this)">
         <span>E sigur? Nu îmi blochează contul Bolt?</span>
         <span class="faq-arrow">▼</span>
@@ -919,7 +919,7 @@
       <div class="faq-answer">Da, e complet sigur. Aplicația doar citește ce apare pe ecran, nu modifică nimic în Bolt. Bolt nu știe că rulează.</div>
     </div>
 
-    <div class="faq-item reveal">
+    <div class="faq-item">
       <div class="faq-question" onclick="toggleFaq(this)">
         <span>Cum funcționează plata?</span>
         <span class="faq-arrow">▼</span>
@@ -927,7 +927,7 @@
       <div class="faq-answer">Plătești 30 lei/lună cu cardul pe site. Primești pe email o cheie de licență cu care activezi aplicația. Poți anula oricând.</div>
     </div>
 
-    <div class="faq-item reveal">
+    <div class="faq-item">
       <div class="faq-question" onclick="toggleFaq(this)">
         <span>Pot să o încerc înainte să plătesc?</span>
         <span class="faq-arrow">▼</span>
@@ -935,7 +935,7 @@
       <div class="faq-answer">Momentan nu există perioadă de probă gratuită, dar 30 lei înseamnă o singură cursă — dacă nu îți place, anulezi după prima lună.</div>
     </div>
 
-    <div class="faq-item reveal">
+    <div class="faq-item">
       <div class="faq-question" onclick="toggleFaq(this)">
         <span>Ce se întâmplă dacă îmi schimb telefonul?</span>
         <span class="faq-arrow">▼</span>
@@ -943,7 +943,7 @@
       <div class="faq-answer">Scrii la <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="413328252432292033242e3724332d203801262c20282d6f222e2c">[email&#160;protected]</a> și îți transferăm licența pe noul telefon în câteva ore.</div>
     </div>
 
-    <div class="faq-item reveal">
+    <div class="faq-item">
       <div class="faq-question" onclick="toggleFaq(this)">
         <span>Merge în toate orașele din România?</span>
         <span class="faq-arrow">▼</span>
@@ -951,7 +951,7 @@
       <div class="faq-answer">Da! Funcționează în toată România — București, Cluj, Timișoara, Iași, oriunde activezi Bolt.</div>
     </div>
 
-    <div class="faq-item reveal">
+    <div class="faq-item">
       <div class="faq-question" onclick="toggleFaq(this)">
         <span>Consumă mult bateria?</span>
         <span class="faq-arrow">▼</span>
@@ -1000,15 +1000,19 @@
   <div class="footer-logo">RideshareOverlay</div>
   <ul class="footer-links">
     <li><a href="privacy_policy.html">Politică de confidențialitate</a></li>
-    <li><a href="/cdn-cgi/l/email-protection#aedcc7cacbddc6cfdccbc1d8cbdcc2cfd7eec9c3cfc7c280cdc1c3">Contact</a></li>
+    <li><a href="mailto:rideshareoverlay@gmail.com">Contact</a></li>
   </ul>
   <div class="footer-copy">© 2026 RideshareOverlay</div>
 </footer>
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   function toggleFaq(el) {
-    const item = el.parentElement;
-    item.classList.toggle('open');
+    const item = el.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    // Close all open items first
+    document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+    // If it wasn't open, open it
+    if (!isOpen) item.classList.add('open');
   }
 
   // Scroll reveal
