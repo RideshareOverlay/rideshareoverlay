@@ -709,7 +709,10 @@
     .pricing-price { font-size: 56px; }
     .features-grid { grid-template-columns: 1fr; }
     .section-title { font-size: 28px; letter-spacing: -0.5px; }
-    #screenshots > div { grid-template-columns: repeat(2, 1fr) !important; }
+  }
+
+  @media (min-width: 769px) {
+    #screenshotsGrid { grid-template-columns: repeat(4, 1fr) !important; }
   }
 </style>
 </head>
@@ -780,32 +783,32 @@
   <p style="text-align:center; color:#8A95A8; font-size:15px; margin-bottom:40px; max-width:600px; margin-left:auto; margin-right:auto; line-height:1.7;">
     Overlay în timp real, filtre personalizabile și tracker complet de câștiguri — totul într-o singură aplicație.
   </p>
-  <div style="display:grid; grid-template-columns: repeat(4, 1fr); gap:20px; max-width:900px; margin:0 auto;">
+  <div style="display:grid; grid-template-columns: repeat(2, 1fr); gap:16px; max-width:900px; margin:0 auto;" id="screenshotsGrid">
 
     <div class="reveal" style="display:flex; flex-direction:column; align-items:center; gap:12px;">
       <div style="background:#111827; border-radius:20px; overflow:hidden; border:1px solid rgba(255,255,255,0.06); box-shadow: 0 20px 60px rgba(0,0,0,0.5);">
-        <img src="screen1.jpeg" alt="Overlay cursă normală" style="width:100%; display:block;"/>
+        <img src="https://raw.githubusercontent.com/RideshareOverlay/rideshareoverlay/main/screen1.jpeg" alt="Overlay cursă normală" style="width:100%; display:block;"/>
       </div>
       <p style="color:#8A95A8; font-size:12px; text-align:center;">Overlay cursă normală</p>
     </div>
 
     <div class="reveal" style="display:flex; flex-direction:column; align-items:center; gap:12px;">
       <div style="background:#111827; border-radius:20px; overflow:hidden; border:1px solid rgba(52,209,134,0.3); box-shadow: 0 20px 60px rgba(52,209,134,0.1);">
-        <img src="screen3.jpeg" alt="Overlay cu contur verde" style="width:100%; display:block;"/>
+        <img src="https://raw.githubusercontent.com/RideshareOverlay/rideshareoverlay/main/screen3.jpeg" alt="Overlay cu contur verde" style="width:100%; display:block;"/>
       </div>
       <p style="color:#34D186; font-size:12px; text-align:center;">Cursă care îndeplinește filtrele</p>
     </div>
 
     <div class="reveal" style="display:flex; flex-direction:column; align-items:center; gap:12px;">
       <div style="background:#111827; border-radius:20px; overflow:hidden; border:1px solid rgba(255,255,255,0.06); box-shadow: 0 20px 60px rgba(0,0,0,0.5);">
-        <img src="screen2.jpeg" alt="Filtre curse" style="width:100%; display:block;"/>
+        <img src="https://raw.githubusercontent.com/RideshareOverlay/rideshareoverlay/main/screen2.jpeg" alt="Filtre curse" style="width:100%; display:block;"/>
       </div>
       <p style="color:#8A95A8; font-size:12px; text-align:center;">Filtre personalizabile</p>
     </div>
 
     <div class="reveal" style="display:flex; flex-direction:column; align-items:center; gap:12px;">
       <div style="background:#111827; border-radius:20px; overflow:hidden; border:1px solid rgba(255,255,255,0.06); box-shadow: 0 20px 60px rgba(0,0,0,0.5);">
-        <img src="screen4.jpeg" alt="Tracker câștiguri" style="width:100%; display:block;"/>
+        <img src="https://raw.githubusercontent.com/RideshareOverlay/rideshareoverlay/main/screen4.png" alt="Tracker câștiguri" style="width:100%; display:block;"/>
       </div>
       <p style="color:#8A95A8; font-size:12px; text-align:center;">Tracker câștiguri</p>
     </div>
